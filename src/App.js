@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/React_Projekt_Pokemon_App/" element={<Home />} />
         <Route path="/type" element={<Type />} />
         <Route path="/detail/:name" element={<PokemonDetail />} />
       </Routes>
