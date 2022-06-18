@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function PokemonItem({ name, url }) {
   const [img, setImg] = useState("");
   const [type, setType] = useState("");
+  let netlfiy;
 
   useEffect(() => {
     fetch(url)
@@ -12,7 +13,7 @@ export default function PokemonItem({ name, url }) {
         setImg(json.sprites.other.dream_world.front_default);
         setType(json.types[0].type.name);
       });
-  }, []);
+  }, [netlfiy]);
 
   return (
     <div className="poke_item">
