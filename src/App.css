@@ -1,38 +1,101 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search{
+  text-align: center;
+  padding: 2vh 0;
+}
+.search input{
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.poke_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+gap: 30px;
+margin: 4vh 0;
+}
+.poke_item {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px -2px #000000;
+  text-align: center;
+  
+
+}
+
+.poke_item:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.poke_item img{
+  width: 100%;
+  height: 250px;
+}
+.description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0;
+}
+.poke_item_link{
+  text-decoration: none;
+  background-color: #ecc92c;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.poke_detail{
+  width: 50%;
+  margin: 5vh auto;
   text-align: center;
 }
+.poke_detail img{
+  width: 100%;
+  height: 400px;
+}
+.description_detail{
+  margin: 2vh 0;
+  line-height: 30px;
+}
+.poke_detail h1{
+  font-size: 4rem;
+  margin-bottom:2vh;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  -webkit-text-stroke: 2px #187fe7;
+  color: #ffde4d;
+}
+.type{
+  padding: 3vh 10%;
+text-align: center;
+  margin: 2vh 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.type span{
+  background-color: #AB00AE;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 6%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .type p:nth-of-type(2){
+  background-color: #57921C;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+} */
