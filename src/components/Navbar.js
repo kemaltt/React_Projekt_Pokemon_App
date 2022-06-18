@@ -14,12 +14,12 @@ export default function Navbar() {
       <ul>
         <li>
           <Link className="nav_link" to="/">
-            <h3>Home</h3>
+            <h4>Home</h4>
           </Link>
         </li>
         <li>
           <Link className="nav_link" to="/type">
-            <h3>Type</h3>
+            <h4>Type</h4>
           </Link>
         </li>
       </ul>
