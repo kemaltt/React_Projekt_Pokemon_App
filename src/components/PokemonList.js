@@ -5,6 +5,7 @@ import PokemonItem from "./PokemonItem";
 export default function PokemonList() {
   const [pokemons, setPokemons] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  let netlfiy;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ export default function PokemonList() {
       .then((json) => {
         setPokemons(json.results);
       });
-  }, []);
+  }, [netlfiy]);
 
   return (
     <div className="pok_container">
